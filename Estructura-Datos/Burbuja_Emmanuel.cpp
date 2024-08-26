@@ -25,18 +25,18 @@ int main(){
                 cin>>datos[i];
             }
             repetidos=false;
-            for(int i=0; i<n; ++i){
+            for(int i=0; i<n; ++i){ 
                 for(int j=0; j<i; ++j){
                     if(datos[i]==datos[j]) repetidos=true;
                 }
             }
             if(repetidos){
-                cout<<"Hay datos estan repetidos por favor ingrese valores distintos"<<endl;
+                cout<<"Hay datos que estan repetidos por favor ingrese valores distintos"<<endl;
             }
         } while(repetidos);
 
         cout<<"Arreglo original:"<<endl;
-        for(int i=0; i<n; ++i){
+        for(int i=0; i<n; ++i){ 
             cout<<datos[i]<<" ";
         }
         cout<<endl;
